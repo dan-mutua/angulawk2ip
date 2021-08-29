@@ -1,5 +1,6 @@
-import { SelectorMatcher } from '@angular/compiler';
+
 import { Component } from '@angular/core';
+import { GithubService} from './service/github.service'
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angulawk2ip';
-}
+
  
-user: String[]
+users:string[]=[]
+constructor( private githubService:GithubService){}
 
 search(){
+ this.githubService.getData().subscribe((data: any) =>{
+   console.log(data)
+   this.users = data
+ })
 
 }
-function search() {
-  throw new Error('Function not implemented.');
+
 }
+
 
