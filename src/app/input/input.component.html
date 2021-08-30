@@ -1,11 +1,11 @@
 <div class="container">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UHlL1klcr7fBLpraLg9Faxr7RpUNJOYexw&usqp=CAU">
 
-<form>
-  <div click="search()" >
+<form (submit)="search()">
+  <div  >
     <label for="username">UserName</label>
-    <input type="text" name="username" placeholder="username" ngModel >
-    <button (click)="search()" class="btn btn-primary" type="search">Search</button>
+    <input type="text" name="username" placeholder="username" [(ngModel)]='username' >
+    <button class="btn btn-primary" type="submit">Search</button>
   </div>
 </form>
 <div>
