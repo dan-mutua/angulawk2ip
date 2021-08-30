@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputComponent } from './input/input.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReposComponent } from './repos/repos.component';
+import { ProfilesComponent } from './profiles/profiles.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     InputComponent,
+    ReposComponent,
+    ProfilesComponent,
     
   ],
   imports: [
