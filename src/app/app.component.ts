@@ -14,13 +14,13 @@ export class AppComponent {
 users:string[]=[]
 constructor( private githubService:GithubService){}
 
-search(){
- this.githubService.getData().subscribe((data: any) =>{
-   console.log(data)
-   this.users = data
- })
+// search(){
+//  this.githubService.getData().subscribe((data: any) =>{
+//    console.log(data)
+//    this.users = data
+//  })
 
-}
+// }
 
 }
 

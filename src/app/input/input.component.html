@@ -7,10 +7,17 @@
     <input type="text" name="username" placeholder="username" [(ngModel)]='username' >
     <button class="btn btn-primary" type="submit">Search</button>
   </div>
+  <!-- {{username}} -->
 </form>
 <div>
-  <p>The repos</p>
+  <p>The profile</p>
+  <app-profiles [profileData]='profileData'></app-profiles>
 </div>
 
+
+<div>
+  <p>repos</p>
+<app-repos [reposData]='reposData'></app-repos>
+</div>
 
 </div>

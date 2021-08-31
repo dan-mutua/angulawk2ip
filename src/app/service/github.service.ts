@@ -11,16 +11,16 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class GithubService {
   constructor(private httpClient: HttpClient) {}
 
-  public Profile(username: string): Observable<any> {
-    let profileUrl =
-      environment.gitHubApi + username+ '?access_token=' + environment.access_token;
+  public profile(username: string): Observable<any> {
+    let profileUrl = `https://api.github.com/users/${username}?access_token=${environment.access_token}`;
+      // environment.gitHubApi + username+ '?access_token=' + environment.access_token;
     return this.httpClient
       .get<any>(profileUrl)
       .pipe(retry(1), catchError(this.handleError));
   }
-  public Repos(username: string): Observable<any> {
-    let profileUrl =
-      environment.gitHubApi +username+ '/repos?access_token=' + environment.access_token;
+  public repos(username: string): Observable<any> {
+    let profileUrl =`https://api.github.com/users/${username}/repos?access_token=${environment.access_token}`
+      // environment.gitHubApi +username+ '/repos?access_token=' + environment.access_token;
     return this.httpClient
       .get<any>(profileUrl)
       .pipe(retry(1), catchError(this.handleError));
