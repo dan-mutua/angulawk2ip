@@ -1,2 +1,6 @@
-<p *ngFor='let repo of reposData'>{{repo.name}}</p>
+<div class="card" *ngFor='let repo of reposData'>
+  <a href="{{ repo.html_url }}">{{repo.name}}</a>
+  <p>{{repo.description}}</p>
+  <p>created in {{repo.created_at}}</p>
+  </div>
 

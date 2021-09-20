@@ -1,5 +1,7 @@
-
-<div>
-  <h2>{{profileData.login}}</h2>
-  <img [src]='profileData.avatar_url'>
-  </div>
+<div class="card-header">
+  <h2>{{ profileData.login }}</h2>
+  <img [src]="profileData.avatar_url" />
+  <p>Followers:  {{ profileData.followers}}   Following: {{profileData.following}}</p>
+  <p>number of public repos:  {{profileData.public_repos}}   private repos: {{profileData.private_repo}}</p>
+  
+</div>
