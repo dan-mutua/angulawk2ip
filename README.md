@@ -15,10 +15,24 @@ In this week two project you can search for git hub username and repos.
  * JAVASCRIPT
 
 ## Setup/Installation Requirements
-* Clone from Github
-* This project was generated with Angular CLI version 12.2.0.
-* Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-and you are done
+
+- Copy the github repository url
+- Clone to your computer
+- Open terminal and navigate to the directory of the project you just cloned to your computer
+- Run the following command to install all the dependencies
+
+```
+npm install
+```
+
+- And the following to run development server
+
+```
+ng serve
+```
+
+- open the browser and navigate to http://localhost:4200/ to see the application in action
+- Generate Github ApiKey(https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 
 
